@@ -277,7 +277,7 @@
                         <p class="shop_delivery_msg">
                           <span>¥20起送</span>
                           <span class="segmentation">/</span>
-                          <span>配送费约¥5</span>
+                          <span>配送费约¥5111</span>
                         </p>
                       </section>
                     </div>
