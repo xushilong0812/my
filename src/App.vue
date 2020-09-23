@@ -1,9 +1,12 @@
 <template>
   <div id="app">
          <!-- 挂载到 DOM -->
-      <FootberNav/>
+      <FootberNav/>qwe
 
 
+
+
+123
 
 
 
