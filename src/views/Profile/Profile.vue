@@ -2,17 +2,18 @@
 <template>
   <div>
     <div>
-       
+     
         <section class="profile">
-             <HeaderTop title="我的"></HeaderTop>
-
+          
+             <HeaderTop title="个人中心"></HeaderTop>
+                <router-link to="/login" >
           <section class="profile-number">
             <a href="javascript:" class="profile-link">
               <div class="profile_image">
                 <i class="iconfont icon-person"></i>
               </div>
               <div class="user-info">
-                <p class="user-info-top">登录/注册</p>
+                <p  class="user-info-top">登录/注册 </p>
                 <p>
                   <span class="user-icon">
                     <i class="iconfont icon-shouji icon-mobile"></i>
@@ -25,6 +26,8 @@
               </span>
             </a>
           </section>
+</router-link>
+
           <section class="profile_info_data border-1px">
             <ul class="info_data_list">
               <a href="javascript:" class="info_data_link">
@@ -108,7 +111,7 @@ HeaderTop,
   }
 </script>
 
-<style lang='stylus' type='text/stylus' scoped>
+<style lang='stylus' type='text/stylus' >
 @import '../../assets/stylus/mixins.styl';
     &.profile //我的
           width 100%

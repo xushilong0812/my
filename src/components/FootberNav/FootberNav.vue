@@ -1,10 +1,9 @@
 <!-- 新建组件 -->
 <template>
   <div>
-    <link rel="stylesheet" href="//at.alicdn.com/t/font_2084201_s42jhqt4etn.css" />
-    <router-view />
-
-    <footer class="footer_guide border-1px">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_2084201_rgrc9ljxqr.css" />
+    
+    <footer class="footer_guide border-1px" v-if="true">
       <router-link to="/msite" class="guide_item " :class="{on:$route.path=='/msite'}">
         <span class="item_icon">
           <i class="iconfont icon-gouwu"></i>
@@ -37,10 +36,9 @@
 export default {};
 </script>
 
-<style  lang='stylus'>
+<style  lang='stylus' scoped>
 @import '../../assets/stylus/reset.styl';
 @import '../../assets/stylus/mixins.styl';
-
 
 .footer_guide { // footer
   top-border-1px(#e4e4e4);
