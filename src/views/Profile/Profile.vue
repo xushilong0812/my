@@ -6,14 +6,14 @@
         <section class="profile">
           
              <HeaderTop title="个人中心"></HeaderTop>
-                <router-link to="/login" >
+                <router-link :to="user?'':'/login'"  >
           <section class="profile-number">
             <a href="javascript:" class="profile-link">
               <div class="profile_image">
                 <i class="iconfont icon-person"></i>
               </div>
               <div class="user-info">
-                <p  class="user-info-top">登录/注册 </p>
+                <p  class="user-info-top" >{{user?userName.data.name:'注册/登录1'}}</p>
                 <p>
                   <span class="user-icon">
                     <i class="iconfont icon-shouji icon-mobile"></i>
@@ -96,6 +96,7 @@
               </div>
             </a>
           </section>
+         
         </section>
       </div>
   </div>
@@ -104,9 +105,27 @@
 
 <script>
 import HeaderTop from "@/components/HeaderTop/HeaderTop.vue"
+import { mapState } from 'vuex'
 export default {
   components:{
 HeaderTop,
+  },
+  data() {
+    return {
+      user:false,
+      userName:"111"
+    }
+  },
+  computed:{
+  ...mapState(["userMsg"]),
+  },
+    mounted(){
+    if(   this.userMsg.code==0)   {
+      this.user=true
+       this.userName=this.userMsg
+     
+    }
+
   }
   }
 </script>

@@ -2,8 +2,9 @@
 <template>
   <div>
     <link rel="stylesheet" href="//at.alicdn.com/t/font_2084201_rgrc9ljxqr.css" />
-    
-    <footer class="footer_guide border-1px" v-if="true">
+
+
+    <footer class="footer_guide border-1px"  v-if="$route.meta.infooter"   >
       <router-link to="/msite" class="guide_item " :class="{on:$route.path=='/msite'}">
         <span class="item_icon">
           <i class="iconfont icon-gouwu"></i>

@@ -19,7 +19,7 @@
 import HeaderTop from "@/components/HeaderTop/HeaderTop.vue"
 export default {
   components:{
-HeaderTop,
+    HeaderTop,
   }
   }
 </script>
